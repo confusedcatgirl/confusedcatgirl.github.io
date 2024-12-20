@@ -2,7 +2,15 @@
     "articles": [
         {
             "title": "The Server is finally online!",
-            "date": "19.12.2024",
+            "date": "19.12.24024",
+            "image": "https://blog.it-planet.com/wp-content/uploads/2023/06/netzwerkserver-herzstueck-infrastruktur.jpg"
+        }, {
+            "title": "The Server is finally online again!",
+            "date": "19.121.2024",
+            "image": "https://blog.it-planet.com/wp-content/uploads/2023/06/netzwerkserver-herzstueck-infrastruktur.jpg"
+        }, {
+            "title": "The Server is finally online yay!",
+            "date": "19.122.2024",
             "image": "https://blog.it-planet.com/wp-content/uploads/2023/06/netzwerkserver-herzstueck-infrastruktur.jpg"
         }
     ]
