@@ -1,16 +1,16 @@
 {
     "articles": [
         {
-            "title": "The Server is finally online!",
-            "date": "19.12.24024",
-            "image": "https://blog.it-planet.com/wp-content/uploads/2023/06/netzwerkserver-herzstueck-infrastruktur.jpg"
-        }, {
-            "title": "The Server is finally online again!",
-            "date": "19.121.2024",
-            "image": "https://blog.it-planet.com/wp-content/uploads/2023/06/netzwerkserver-herzstueck-infrastruktur.jpg"
-        }, {
-            "title": "The Server is finally online yay!",
-            "date": "19.122.2024",
+            "title": "A proper Contact Section was addede!",
+            "date": "23.12.2024",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXjMLDABmAXpBCx4PC1E_Mhpol9CeiHT78oS87ZBSNLqKes6ub8pVspXyHV5b1t3gZT9M&usqp=CAU"
+        },{
+            "title": "The new Homepage finally went online!",
+            "date": "22.12.2024",
+            "image": "https://www.gruender.de/wp-content/uploads/2018/08/Homepage-Baukasten-scaled.jpeg"
+        },{
+            "title": "The Cloud is finally online!",
+            "date": "19.12.2024",
             "image": "https://blog.it-planet.com/wp-content/uploads/2023/06/netzwerkserver-herzstueck-infrastruktur.jpg"
         }
     ]
