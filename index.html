@@ -5,37 +5,6 @@
         <title>Blorb's Website</title>
         <link rel="icon" type="image/x-icon" href="https://confusedblorb.org/icon.png">
         <link rel="stylesheet" href="style.css">
-
-        <script>
-            var getJSON = function(url, callback) {
-                var xhr = new XMLHttpRequest();
-                xhr.open('GET', url, true);
-                xhr.responseType = 'json';
-                xhr.onload = function() {
-                    var status = xhr.status;
-                    if (status === 200) {
-                        callback(null, xhr.response);
-                    } else {
-                        callback(status, xhr.response);
-                    }
-                };
-                xhr.send();
-            };
-    
-            getJSON('https://confusedblorb.org/news.json', function(err, data) {
-                news1title.textContent = data.articles[0].title
-                news1date.textContent = data.articles[0].date
-                news1image.src = data.articles[0].image
-    
-                news2title.textContent = data.articles[1].title
-                news2date.textContent = data.articles[1].date
-                news2image.src = data.articles[1].image
-    
-                news3title.textContent = data.articles[2].title
-                news3date.textContent = data.articles[2].date
-                news3image.src = data.articles[2].image
-            }); 
-        </script>
     </head>
 
     <body>
@@ -43,7 +12,6 @@
         
         <div class="topnav">
             <a class="active" href="#home">Home</a>
-            <a class="inactive" href="#news">News</a>
             <a class="inactive" href="#cloud">Cloud</a>
             <a class="inactive" href="#contact">Contact</a>
             <a class="inactive" href="#about">About</a>
@@ -66,30 +34,6 @@
             <p>This page is rather short as of right now, but I hope to extend it into a lot more!</p>
         </div>
 
-        <div class="text_area" id="news">
-            <h2>News</h2>
-            <div class="news_area">
-                <div class="news_div">
-                    <h3 id="news1title"></h3>
-                    <p id="news1date"></p>
-                    <img class="news_image" id="news1image" src="">
-                </div>
-
-                <div class="news_div">
-                    <h3 id="news2title"></h3>
-                    <p id="news2date"></p>
-                    <img class="news_image" id="news2image" src="">
-                </div>
-
-                <div class="news_div">
-                    <h3 id="news3title"></h3>
-                    <p id="news3date"></p>
-                    <img class="news_image" id="news3image" src="">
-                </div>
-            </div>
-            <a href="news.html" class="button">More News</a>
-        </div>
-
         <div class="text_area" id="cloud">
             <h2>Cloud</h2>
             <p>Running locally at my place, this server is only available to a select few. It has been properly configured to utilize HSTS and HTTPS.</p>
@@ -108,22 +52,17 @@
                 <a href="https://github.com/confusedcatgirl"><img src="https://confusedblorb.org/icons/github.webp" class="icon"></a>
             </div>
             
-            <p class="centered">Can contain NSFW content:</p>
+            <p class="centered">Contains NSFW:</p>
             <div class="centered">
                 <a href="https://x.com/darkmothlady"><img src="https://confusedblorb.org/icons/twitter.webp" class="icon"></a>
                 <a href="https://anilist.co/user/confusedcatgirl"><img src="https://confusedblorb.org/icons/anilist.webp" class="icon"></a>
-            </div>
-            
-            <p class="centered">Exclusively NSFW:</p>
-            <div class="centered">
                 <a href="https://www.deviantart.com/confusedcatgirl"><img src="https://confusedblorb.org/icons/deviantart.webp" class="icon"></a>
             </div>
         </div>
 
         <div class="text_area">
             <h2 id="about">About</h2>
-            <p>© 2023 - 2024 confusedcatgirl</p>
-            <p>Images used in the News Section have their links in "confusedblorb.org/news.json". These belong to their respective owners.</p>
+            <p>© 2023 - 2025 confusedcatgirl</p>
             <a style="padding-left: 32px">Banner by </a><a href="https://www.mooshieblob.com/">mooshieblob 2024</a><br><br>
             <a style="padding-left: 32px">Image by </a><a href="https://danbooru.donmai.us/posts/1029426">Yuuki Tatsuya 2011</a>
             <p></p>
