@@ -1,17 +1,32 @@
+:root {
+    --button-bright: #ddddff;
+    --button-dark: #aaaaff;
+    --color-indigo-900:oklch(35.9% .144 278.697);
+    --background-color: color-mix(in oklab,var(--color-indigo-900)40%,transparent);
+}
+
 body {
-    margin: 0;
-    
     background-image: url('https://raw.githubusercontent.com/confusedcatgirl/confusedcatgirl.github.io/refs/heads/main/background.webp');
     background-attachment: fixed;
     background-size: cover;
+    
 }
 
 p {
     padding-left: 32px;
+    line-height: 25px;
 }
 
 h2 {
     padding-left: 16px;
+    line-height: 20px;
+}
+
+img {
+    border-radius: 15px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .banner {
@@ -23,55 +38,33 @@ h2 {
 }
 
 .button {
-    background-image: linear-gradient(#ddddff, #aaaaff);
+    background-image: linear-gradient(var(--button-bright), var(--button-dark));
     color: black;
-    margin: 10px 10px 10px auto;
+    margin-inline: auto;
+    margin-block: 1rem;
     border-radius: 15px;
     font-size: large;
     font-family: 'Trebuchet MS', sans-serif;
-    max-width: 100px;
-    padding: 10px 30px 10px 40px;
+    padding: 10px 30px 10px 30px;
+    max-width:fit-content;
+    display: block;
     text-decoration: none;
-    display: flex;
 }
 
 .button:hover {
-    background-image: linear-gradient(#aaaaff, #ddddff);
+    background-image: linear-gradient(var(--button-dark), var(--button-bright));
 }
 
 .text_area {
     overflow: hidden;
-    background-color: rgba(124, 124, 182, 0.4);
+    background-color: var(--background-color);
     color: white;
     display: inline-flexbox;
     border-radius: 20px;
-    margin: 2%;
+    margin: 1% 5% 1% 5%;
     backdrop-filter: blur(6px);
     padding: 0% 1% 1% 1%;
     font-family: 'Trebuchet MS', sans-serif;
-}
-
-.news_area {
-    display: flex;
-    overflow: hidden;
-    margin-bottom: 10px;
-}
-
-.news_div {
-    background-color:  rgb(221, 221, 255);
-    color: black;
-    font-family: 'Trebuchet MS', sans-serif;
-    width: 31.4%; height: 10%;
-    padding: 1px 10px 5px 10px;
-    margin-left: 10px;
-    border-radius: 15px;
-}
-
-.news_image {
-    width: 100%;
-    border-radius: 15px;
-    height: 300px;
-    object-fit: cover;
 }
 
 .icon {
@@ -84,11 +77,12 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .topnav {
     overflow: hidden;
-    background-color: rgba(51, 51, 112, 0.4);
+    background-color: var(--background-color);
     color: white;
     border-radius: 10px;
     margin: 1%;
@@ -97,36 +91,25 @@ h2 {
 
 .topnav a {
     float: left;
-    color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
+    margin: 14px 0px 14px 10px;
+    width: 150px;
+    height: 15px;
     text-decoration: none;
-    font-size: 17px;
+    
     border-radius: 10px;
     font-family: 'Trebuchet MS', sans-serif;
-}
-
-.topnav a.active {
-    background-image: linear-gradient(#6666aa, #444488);
-    color: white;
-    font-size: large;
-    margin: 10px 0px 10px 10px;
-    height: 23px;
-}
-
-.topnav a.active:hover {
-    background-image: linear-gradient(#444488, #6666aa);
-}
-
-.topnav a.inactive {
-    background-image: linear-gradient(#ddddff, #aaaaff);
+    font-size: 17px;
     color: black;
-    margin: 14px 0px 14px 10px;
-    font-size: small;
-    height: 15px;
     display: block;
 }
 
+.topnav a.inactive {
+    background-image: linear-gradient(var(--button-bright), var(--button-dark));
+    transition: all 150ms;
+}
+
 .topnav a.inactive:hover {
-    background-image: linear-gradient(#aaaaff, #ddddff);
+    background-image: linear-gradient(var(--button-dark), var(--button-bright));
 }
