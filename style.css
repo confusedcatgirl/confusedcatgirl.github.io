@@ -1,10 +1,8 @@
-
 :root {
-    --button-bright: #ddddff;
-    --button-dark: #aaaaff;
-    --color-indigo-900:oklch(35.9% .144 278.697);
-    --background-color: color-mix(in oklab,var(--color-indigo-900)40%,transparent);
+    --button-bright: #2d43c2;
+    --button-dark: #0b3975;
 }
+
 
 body {
     background-image: url('https://raw.githubusercontent.com/confusedcatgirl/confusedcatgirl.github.io/refs/heads/main/background.webp');
@@ -39,21 +37,27 @@ img {
 }
 
 .button {
-    background-image: linear-gradient(var(--button-bright), var(--button-dark));
-    color: black;
-    margin-inline: auto;
-    margin-block: 1rem;
-    border-radius: 15px;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(to bottom, var(--button-bright), var(--button-dark)) border-box;
+    border: 10px solid transparent;
+    border-radius: 50vh;  
+    transition: all 0.2s;
+
+    text-decoration: none;
+    color: black; 
     font-size: large;
     font-family: 'Trebuchet MS', sans-serif;
+
+    margin-inline: auto;
+    margin-block: 1rem;
     padding: 10px 30px 10px 30px;
-    max-width:fit-content;
+    max-width: fit-content;
     display: block;
-    text-decoration: none;
+    z-index: 1;
 }
 
 .button:hover {
-    background-image: linear-gradient(var(--button-dark), var(--button-bright));
+    padding: 10px 50px;
 }
 
 .text_area {
@@ -107,10 +111,13 @@ img {
 }
 
 .topnav a.inactive {
-    background-image: linear-gradient(var(--button-bright), var(--button-dark));
-    transition: all 150ms;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(to bottom, var(--button-bright), var(--button-dark)) border-box;
+    border: 10px solid transparent;
+    border-radius: 50vh;
+    transition: all 0.2s;
 }
 
 .topnav a.inactive:hover {
-    background-image: linear-gradient(var(--button-dark), var(--button-bright));
+    padding: 14px 30px;
 }
