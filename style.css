@@ -1,6 +1,7 @@
 :root {
     --button-bright: #2d43c2;
     --button-dark: #0b3975;
+    --background-color: rgba(9, 60, 90, 0.3);
 }
 
 
@@ -13,12 +14,12 @@ body {
 
 p {
     padding-left: 32px;
-    line-height: 25px;
+    line-height: 15px;
 }
 
 h2 {
     padding-left: 16px;
-    line-height: 20px;
+    line-height: 48px;
 }
 
 img {
@@ -67,7 +68,7 @@ img {
     display: inline-flexbox;
     border-radius: 20px;
     margin: 1% 5% 1% 5%;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(12px);
     padding: 0% 1% 1% 1%;
     font-family: 'Trebuchet MS', sans-serif;
 }
@@ -120,4 +121,5 @@ img {
 
 .topnav a.inactive:hover {
     padding: 14px 30px;
+
 }
