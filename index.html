@@ -7,10 +7,17 @@
         <link rel="icon" type="image/x-icon" href="icon.webp">
         <link rel="stylesheet" href="https://unpkg.com/7.css" />
         <link rel="stylesheet" href="style.css" />
-        <script type="text/javascript">
+        <script type="text/javascript" >
             function change_page(page) {
+                window.location.hash = page;
                 document.getElementById("iframe").src = page + ".html";
                 return false;
+            }
+
+            function load_site() {
+                if (window.location.hash.substring(1) != undefined) {
+                    change_page(paramString)
+                }
             }
         </script>
 
