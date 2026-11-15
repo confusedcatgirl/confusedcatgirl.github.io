@@ -9,14 +9,20 @@
         <link rel="stylesheet" href="style.css" />
         <script type="text/javascript" >
             function change_page(page) {
-                window.location.hash = page;
+                if (window.location.hash.substring(1) != "home") window.location.hash = page;
                 document.getElementById("iframe").src = page + ".html";
                 return false;
             }
 
             function load_site() {
-                if (window.location.hash.substring(1) != undefined) {
-                    change_page(paramString)
+                if (window.location.hash.substring(1) == "index") {
+                    change_page("home");
+                    return;
+                }
+                if (window.location.hash.substring(1) !== "") {
+                    change_page(window.location.hash.substring(1));
+                } else {
+                    change_page("home");
                 }
             }
         </script>
@@ -28,7 +34,7 @@
         <meta content="#0b3975" data-react-helmet="true" name="theme-color" />
     </head>
 
-    <body style="background-image: url(background.jpg); background-size: auto; margin: 0px;">
+    <body style="background-image: url(background.jpg); background-size: auto; margin: 0px;" onload="load_site()">
         <div class="window glass active side_bar" id="banner-exe">
             <div class="title-bar">
                 <div class="title-bar-text">banner.exe</div>
